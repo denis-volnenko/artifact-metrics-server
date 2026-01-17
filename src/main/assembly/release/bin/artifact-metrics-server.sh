@@ -1,5 +1,3 @@
 #!/bin/bash
 
-cd ../data
-
-java -jar ../bin/asciidoc-server.jar
+java -jar ./artifact-metrics-server.jar
