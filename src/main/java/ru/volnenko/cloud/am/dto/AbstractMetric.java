@@ -16,6 +16,14 @@ public abstract class AbstractMetric extends LinkedHashMap<String, String> {
         return get("type");
     }
 
+    public String branch() {
+        return get("branch");
+    }
+
+    public void branch(String branch) {
+        put("branch", branch);
+    }
+
     public void application() {
         put("type", "APPLICATION");
     }
@@ -86,4 +94,5 @@ public abstract class AbstractMetric extends LinkedHashMap<String, String> {
     public int hashCode() {
         return key().hashCode();
     }
+
 }
